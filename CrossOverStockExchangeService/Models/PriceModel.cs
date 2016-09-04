@@ -10,5 +10,7 @@ namespace CrossOverStockExchangeService.Models
     {
         public string StockCode { get; set; }
         public int Price { get; set; }
+        public int Change { get; set; }
+        public int Volumn { get; set; }
     }
 }

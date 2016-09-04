@@ -25,10 +25,13 @@ namespace CrossOverStockExchangeService
             Random rd = new Random();
             foreach (var code in codes)
             {
+                int price = rd.Next(1, 1000);
                 model.Add(new PriceModel
                 {
                     StockCode = code,
-                    Price = rd.Next(1, 1000)
+                    Price = price,
+                    Change = rd.Next(1, price/10),
+                    Volumn = rd.Next(200, 9999999)
                 });
             }
 

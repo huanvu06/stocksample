@@ -1,0 +1,3 @@
+﻿interface Object {
+    getTestName(): string;
+}
